@@ -7,7 +7,7 @@ import asyncio
 app = Flask(__name__)
 
 # Authorization token
-AUTHORIZATION_TOKEN = '4e834e9332301d12878eeb9c93110de1f2e7f387'
+AUTHORIZATION_TOKEN = '2ff2a3d1b342ad0eeed0613f67a47736a5a4eb72'
 
 # API Headers
 HEADERS = {
