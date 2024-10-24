@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request
 import requests
 import time
+import os
+import asyncio
 
 app = Flask(__name__)
 
@@ -113,4 +115,5 @@ def generate_image():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5050)), debug=True)
+
